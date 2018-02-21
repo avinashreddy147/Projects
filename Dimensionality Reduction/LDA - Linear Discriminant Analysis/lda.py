@@ -18,7 +18,7 @@ X_test = sc.transform(X_test)
 
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
 lda = LDA(n_components = 2) 
-X_train = lda.fit_transform(X_train, y_train) #LDA is Supervised so include y_train
+X_train = lda.fit_transform(X_train, y_train) 
 X_test = lda.transform(X_test)
 
 from sklearn.linear_model import LogisticRegression
