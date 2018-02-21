@@ -17,7 +17,7 @@ X_train = sc.fit_transform(X_train)
 X_test = sc.transform(X_test)
 
 from sklearn.decomposition import PCA
-pca = PCA(n_components = 2)  # do first pca = PCA(n_components = None)
+pca = PCA(n_components = 2) 
 X_train = pca.fit_transform(X_train)
 X_test = pca.transform(X_test)
 explained_variance = pca.explained_variance_ratio_ 
